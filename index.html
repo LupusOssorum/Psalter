@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>TypeScript HTML App</title>
+	<link rel="stylesheet" href="styleSheets/resize.css" type="text/css" />
+	<link rel="stylesheet" href="styleSheets/main.css" type="text/css" />
+	<link rel="stylesheet" href="styleSheets/psalmSelectMenu.css" type="text/css" />
+	<link rel="stylesheet" href="styleSheets/psalmText.css" type="text/css" />
+	<link rel="stylesheet" href="styleSheets/sideButtons.css" type="text/css" />
+	<link rel="stylesheet" href="styleSheets/slideOutMenus.css" type="text/css" />
+	<link rel="stylesheet" href="styleSheets/verseSelectMenu.css" type="text/css" />
+
+	<script src="scripts/resize.js"></script>
+	<script src="scripts/psalmManager.js"></script>
+	<script src="scripts/slideOutMenu.js"></script>
+	<script src="scripts/app.js"></script>
+</head>
+<body id="body">
+	<div id="content" class="resize_area">
+		<div id="tuneDiv" class="resize_top">Tune spot</div>
+
+		<div class="resize_bar">
+			<div class="resize_barGrip"></div>
+			<button id="tuneSelect_button" , class="sideButton">TU</button>
+			<button id="psalmSelect_button" , class="sideButton">
+				<img src="images/psalmButton.png" />
+			</button>
+			<button id="verseSelect_button" , class="sideButton">
+				<img src="images/verseButton.png" />
+			</button>
+		</div>
+		<button id="settings_button" , class="sideButton">SE</button>
+
+		<div id="textDiv" class="resize_bottom">
+			<div id="innerText">
+
+			</div>
+
+			<br /><br /><br /><br /><br />
+		</div>
+	</div>
+
+	<div id="psalmSelect_menu" class="slideOutMenu hide">
+		<div id="psalmSelect_bg" class="slideOutMenu_bg"></div>
+		<div id="psalmSelect_content" class="slideOutMenu_content">
+			<!--buttons are created in script (slideOutMenu.ts/js)-->
+		</div>
+	</div>
+	<div id="verseSelect_menu" class="slideOutMenu hide">
+		<div id="verseSelect_bg" class="slideOutMenu_bg"></div>
+		<div id="verseSelect_content" class="slideOutMenu_content">
+			<div id="verseSelect_content_title"></div>
+			<div id="verseButtons"></div>
+			
+		</div> 
+	</div>
+</body>
+</html>
